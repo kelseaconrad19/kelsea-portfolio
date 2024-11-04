@@ -25,6 +25,7 @@
   overflow: initial;
   border-radius: 10px;
   outline: none;
+  padding: 1px 30px 1px 30px;
   .box_inner {
     height: 75vh;
     width: 750px;
@@ -168,7 +169,7 @@ body.light .custom-modal.dark .box_inner::-webkit-scrollbar-thumb {
       @media (max-width: 420px) {
         width: 320px;
       }
-      border: 2px solid #222;
+      // border: 2px solid #222;
     }
     &.portfolio {
       @media (min-width: 1600px) {
