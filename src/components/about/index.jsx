@@ -24,7 +24,7 @@ const index = () => {
               </div>
               {/* End .col */}
 
-              <div className="col-12 d-block d-sm-none">
+              <div className="col-12 d-none">
                 <Image
                   src={heroImgMobile}
                   className="img-fluid main-img-mobile"

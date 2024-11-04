@@ -1414,11 +1414,30 @@ body.light .contact .custom-span-contact a {
 
   .main-img-mobile {
     border-radius: 50%;
-    width: 270px;
-    height: auto;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
     border: 4px solid #252525;
     margin: 0 auto 25px;
     display: block;
+  }
+  
+  .main-img-mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+  }
+  
+  /* Ensure the parent container is styled correctly */
+  .main-img-mobile-container > .main-img-mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .home .home-details h1 {
@@ -1682,8 +1701,31 @@ body.light .contact .custom-span-contact a {
   }
 
   .main-img-mobile {
+    border-radius: 50%;
     width: 230px;
-    height: auto;
+    height: 230px;
+    object-fit: cover;
+    border: 4px solid #252525;
+    margin: 0 auto 25px;
+    display: block;
+  }
+  
+  .main-img-mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+  }
+  
+  /* Ensure the parent container is styled correctly */
+  .main-img-mobile-container > .main-img-mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .title-section {
     padding-left: 15px;
