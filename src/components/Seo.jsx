@@ -11,7 +11,7 @@ const SEO = ({ pageTitle }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href={url || "https://kelseaconrad.com"} />
+      <link rel="canonical" href={ "https://kelseaconrad.com" } />
     </Head>
   </>
 );
