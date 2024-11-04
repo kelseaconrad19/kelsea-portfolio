@@ -5,7 +5,7 @@ const Address = () => {
     <>
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-map position-absolute"></i>
-        <span className="d-block">address</span>1203 Martins Creek Blvd Summerville, SC , United States Of America 29485.
+        <span className="d-block">address</span>1203 Martin&apos;s Creek Blvd Summerville, SC , United States Of America 29485.
       </p>
       {/* End .custom-span-contact */}
 
@@ -19,7 +19,7 @@ const Address = () => {
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-phone-square position-absolute"></i>
         <span className="d-block">phone</span>{" "}
-        <a href="Tel: +216 21 184 010">+1 346 814 6758</a>
+        <a href="Tel: +1 346 814 6758">+1 346 814 6758</a>
       </p>
       {/* End .custom-span-contact */}
     </>
