@@ -5,8 +5,7 @@ const Address = () => {
     <>
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-map position-absolute"></i>
-        <span className="d-block">address</span>1203 Martin's Creek Blvd Summerville, SC ,
-        United States Of America 29485.
+        <span className="d-block">address</span>1203 Martins Creek Blvd Summerville, SC , United States Of America 29485.
       </p>
       {/* End .custom-span-contact */}
 
