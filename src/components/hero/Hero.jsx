@@ -29,9 +29,9 @@ const Hero = () => {
           className="col-lg-4 bg position-fixed d-none d-lg-block"
           style={{
             backgroundImage: `url(${heroContent.heroImage})`,
-            width: "30%",
-            height: "80%",
-            marginLeft: "5%",
+            // width: "30%",
+            // height: "80%",
+            // marginLeft: "5%",
           }}
         ></div>
         <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
