@@ -16,12 +16,6 @@ const Address = () => {
       </p>
       {/* End .custom-span-contact */}
 
-      <p className="open-sans-font custom-span-contact position-relative">
-        <i className="fa fa-phone-square position-absolute"></i>
-        <span className="d-block">phone</span>{" "}
-        <a href="Tel: +1 346 814 6758">+1 346 814 6758</a>
-      </p>
-      {/* End .custom-span-contact */}
     </>
   );
 };
