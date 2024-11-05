@@ -10,7 +10,7 @@ const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: "kelsea conrad",
   heroDesignation: "web developer",
-  heroDescriptions: `I'm a Charleston, SC-based creative problem-solver who builds digital magic from pixels and code. I thrive on making the complex simple and turning big ideas into seamless, human-centered experiences. Let's create something truly unique together!`,
+  heroDescriptions: `I'm a Charleston, SC-based creative problem-solver experienced with Python, Flask, JavaScript, and React, building digital magic from pixels and code. I specialize in designing intuitive user interfaces and crafting reliable, scalable backend solutions, always aiming to bridge the gap between creativity and technology. I thrive on making the complex simple and turning big ideas into seamless, human-centered experiences. `,
   heroBtn: "Get to know me",
 };
 
