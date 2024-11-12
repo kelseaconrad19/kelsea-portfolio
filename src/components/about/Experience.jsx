@@ -10,7 +10,7 @@ const experienceContent = [
 	{
 		year: "2019 - Present",
 		position: " English Teacher | ",
-		compnayName: "Dorchester County School District 2",
+		compnayName: "Dorchester School District 2",
 		details: `Developed a talent for breaking down complex concepts into digestible lessons, fostering an environment where students could thrive and learn effectively.`,
 	},
 	{
