@@ -80,4 +80,5 @@ function NavBar() {
 	);
 }
 
+export { poppins };
 export default NavBar;

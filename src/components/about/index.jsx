@@ -2,11 +2,8 @@ import React from "react";
 import Achievements from "./Achievements";
 import Education from "./Education";
 import Experience from "./Experience";
-import PersonalInfo from "./PersonalInfo";
-import Skills from "./Skills";
-import cv from "../../../public/assets/img/cv.webp";
-import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
-import Image from "next/image";
+import { poppins } from "../navBar";
+import classNames from "classnames";
 
 const index = () => {
 	return (
@@ -18,10 +15,27 @@ const index = () => {
 					<div className="col-xl-6 col-lg-5 col-12">
 						<div className="row">
 							<div className="col-12">
-								<h3 className="text-uppercase custom-title mb-0 ft-wt-600">
+								<h3
+									className={classNames(
+										poppins.className,
+										"text-uppercase",
+										"mb-0",
+										"ft-wt-600"
+									)}
+								>
 									personal info
 								</h3>
-								<p>This will be information about my story!</p>
+								<p
+									className={poppins.className}
+									style={{
+										marginTop: "10px",
+										fontSize: "1.1rem",
+										color: "eee",
+										lineHeight: "1.8",
+									}}
+								>
+									This will be information about my story!
+								</p>
 							</div>
 							{/* End .col */}
 
@@ -33,7 +47,11 @@ const index = () => {
 									href="/assets/resume.pdf"
 									download
 								>
-									<span className="button-text">Download CV</span>
+									<span
+										className={classNames(poppins.className, "button-text")}
+									>
+										Download CV
+									</span>
 									<span className="button-icon fa fa-download"></span>
 								</a>
 							</div>
@@ -57,7 +75,7 @@ const index = () => {
 				{/* Experience & Education Starts */}
 				<div className="row">
 					<div className="col-12">
-						<h3 class="exp-header">
+						<h3 className={classNames(poppins.className, "exp-header", "mb-5")}>
 							Experience <span>&</span> Education
 						</h3>
 					</div>
