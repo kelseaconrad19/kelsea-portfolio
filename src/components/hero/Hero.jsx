@@ -48,13 +48,14 @@ const Hero = () => {
 								// style={{ width: "50%", height: "50%" }}
 							/>
 							<h1
-								className={`text-uppercase ${rockSalt.className}`}
+								className={`text-uppercase`}
 								style={{
 									fontSize: "3.4rem",
 									lineHeight: "1.9",
 									letterSpacing: "0.3rem",
 									fontWeight: "800",
 									textShadow: "10px 5px 20px #D8D8D5",
+									fontFamily: rockSalt,
 								}}
 							>
 								{""} {heroContent.heroTitleName}.
