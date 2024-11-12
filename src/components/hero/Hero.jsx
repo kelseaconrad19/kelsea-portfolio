@@ -3,9 +3,9 @@ import heroImgMobile from "../../../public/assets/img/hero/grinSmile.png";
 import AboutMain from "../about";
 import Image from "next/image";
 import NavBar from "../navBar";
-import { Caveat } from "@next/font/google";
+import { Comforter } from "@next/font/google";
 
-const caveat = Caveat({
+const comforter = Comforter({
 	weight: "400",
 	style: "normal",
 	subsets: ["latin"],
@@ -54,7 +54,7 @@ const Hero = () => {
 								// style={{ width: "50%", height: "50%" }}
 							/>
 							<h1
-								className={caveat.className}
+								className={comforter.className}
 								style={{
 									fontSize: "3.4rem",
 									lineHeight: "1.9",
