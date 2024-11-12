@@ -69,7 +69,7 @@ const Hero = () => {
 				</div>
 				<div class="gradient-line"></div>
 				<div className="about-section">
-					<h2 className="about-heading">About Me</h2>
+					<h2 className="about-heading rock-salt-font">About Me</h2>
 					<AboutMain />
 				</div>
 			</div>
