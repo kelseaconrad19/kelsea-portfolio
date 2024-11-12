@@ -56,10 +56,10 @@ const Hero = () => {
 							<h1
 								className={comforter.className}
 								style={{
-									fontSize: "3.4rem",
-									lineHeight: "1.9",
-									letterSpacing: "0.3rem",
-									fontWeight: "800",
+									fontSize: "5.2rem",
+									lineHeight: "1.5",
+									letterSpacing: "0.2rem",
+									fontWeight: "400",
 									textShadow: "10px 5px 20px #D8D8D5",
 								}}
 							>
@@ -76,7 +76,15 @@ const Hero = () => {
 				</div>
 				<div class="gradient-line"></div>
 				<div className="about-section">
-					<h2 className="about-heading">About Me</h2>
+					<h2
+						className={comforter.className}
+						style={{
+							fontSize: "4.5rem",
+							marginBottom: "3rem",
+						}}
+					>
+						About Me
+					</h2>
 					<AboutMain />
 				</div>
 			</div>
