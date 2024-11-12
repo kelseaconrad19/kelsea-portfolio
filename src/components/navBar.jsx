@@ -2,7 +2,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
+import { Poppins } from "@next/font/google";
+
 // import Logo from "../../public/assets/img/hero/logo.png";
+
+const poppins = Poppins({
+	weight: "400",
+	style: "normal",
+	subsets: ["latin"],
+});
 
 function NavBar() {
 	return (
@@ -33,18 +41,36 @@ function NavBar() {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto" style={{ fontFamily: "poppins" }}>
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#link" style={{ marginLeft: "12px" }}>
+					<Nav className="me-auto">
+						<Nav.Link className={poppins.className} href="#home">
+							Home
+						</Nav.Link>
+						<Nav.Link
+							className={poppins.className}
+							href="#link"
+							style={{ marginLeft: "12px" }}
+						>
 							About
 						</Nav.Link>
-						<Nav.Link href="#link" style={{ marginLeft: "12px" }}>
+						<Nav.Link
+							className={poppins.className}
+							href="#link"
+							style={{ marginLeft: "12px" }}
+						>
 							Portfolio
 						</Nav.Link>
-						<Nav.Link href="#link" style={{ marginLeft: "12px" }}>
+						<Nav.Link
+							className={poppins.className}
+							href="#link"
+							style={{ marginLeft: "12px" }}
+						>
 							Blog
 						</Nav.Link>
-						<Nav.Link href="#link" style={{ marginLeft: "12px" }}>
+						<Nav.Link
+							className={poppins.className}
+							href="#link"
+							style={{ marginLeft: "12px" }}
+						>
 							Contact
 						</Nav.Link>
 					</Nav>
