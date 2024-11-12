@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Modal from "react-modal";
 import heroImgMobile from "../../../public/assets/img/hero/grinSmile.png";
-import cancelImg from "../../../public/assets/img/cancel.svg";
 import AboutMain from "../about";
 import Image from "next/image";
 import NavBar from "../navBar";
+import { rockSalt } from "../../pages/_app";
 
 const heroContent = {
 	heroImage: "assets/img/hero/sticker1.png",
@@ -49,7 +48,7 @@ const Hero = () => {
 								// style={{ width: "50%", height: "50%" }}
 							/>
 							<h1
-								className="text-uppercase"
+								className={`text-uppercase ${rockSalt.className}`}
 								style={{
 									fontSize: "3.4rem",
 									lineHeight: "1.9",

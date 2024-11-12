@@ -6,6 +6,11 @@ import ContextProvider from "../Context/ContextProvider";
 import { RockSalt } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const rockSalt = RockSalt({
+	weight: "400",
+	style: "normal",
+});
+
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
 	ssr: false,
 });
@@ -33,4 +38,5 @@ function MyApp({ Component, pageProps }) {
 	);
 }
 
+export { rockSalt };
 export default MyApp;
