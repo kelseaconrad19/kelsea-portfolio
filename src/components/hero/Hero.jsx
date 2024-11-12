@@ -3,9 +3,9 @@ import heroImgMobile from "../../../public/assets/img/hero/grinSmile.png";
 import AboutMain from "../about";
 import Image from "next/image";
 import NavBar from "../navBar";
-import { Rock_Salt } from "@next/font/google";
+import { RockSalt } from "@next/font/google";
 
-const rockSalt = Rock_Salt({
+const rockSalt = RockSalt({
 	weight: "400",
 	style: "normal",
 	subsets: ["latin"],
