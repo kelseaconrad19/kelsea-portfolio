@@ -3,14 +3,7 @@ import { useEffect } from "react";
 import "../styles/index.scss";
 import dynamic from "next/dynamic";
 import ContextProvider from "../Context/ContextProvider";
-import { Rock_Salt } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-const rockSalt = Rock_Salt({
-	weight: "400",
-	style: "normal",
-	subsets: ["latin"],
-});
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
 	ssr: false,

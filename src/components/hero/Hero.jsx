@@ -3,6 +3,13 @@ import heroImgMobile from "../../../public/assets/img/hero/grinSmile.png";
 import AboutMain from "../about";
 import Image from "next/image";
 import NavBar from "../navBar";
+import { Rock_Salt } from "@next/font/google";
+
+const rockSalt = Rock_Salt({
+	weight: "400",
+	style: "normal",
+	subsets: ["latin"],
+});
 
 const heroContent = {
 	heroImage: "assets/img/hero/sticker1.png",
@@ -47,7 +54,7 @@ const Hero = () => {
 								// style={{ width: "50%", height: "50%" }}
 							/>
 							<h1
-								className="text-uppercase rock-salt-font"
+								className={rockSalt.className}
 								style={{
 									fontSize: "3.4rem",
 									lineHeight: "1.9",
