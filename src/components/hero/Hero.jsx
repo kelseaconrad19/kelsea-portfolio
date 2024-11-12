@@ -47,7 +47,7 @@ const Hero = () => {
 								// style={{ width: "50%", height: "50%" }}
 							/>
 							<h1
-								className="text-uppercase poppins-font"
+								className="text-uppercase rock-salt-font"
 								style={{
 									fontSize: "3.4rem",
 									lineHeight: "1.9",
