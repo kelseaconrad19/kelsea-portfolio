@@ -3,10 +3,10 @@ import { useEffect } from "react";
 import "../styles/index.scss";
 import dynamic from "next/dynamic";
 import ContextProvider from "../Context/ContextProvider";
-import { RockSalt } from "next/font/google";
+import { Rock_Salt } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const rockSalt = RockSalt({
+const rockSalt = Rock_Salt({
 	weight: "400",
 	style: "normal",
 });
