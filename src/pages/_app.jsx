@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const rockSalt = Rock_Salt({
 	weight: "400",
 	style: "normal",
+	subsets: ["latin"],
 });
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
