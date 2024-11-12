@@ -32,5 +32,5 @@ function MyApp({ Component, pageProps }) {
 	);
 }
 
-export { rockSalt };
+// export { rockSalt };
 export default MyApp;
