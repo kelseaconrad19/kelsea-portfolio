@@ -71,9 +71,7 @@ body {
 	width: 100%;
 	background-color: #eeeeee;
 }
-.custom-navbar {
-	background: #353531;
-}
+
 .poppins-font {
 	font-family: "Poppins", sans-serif;
 }
@@ -81,9 +79,15 @@ body {
 .open-sans-font {
 	font-family: "Open Sans", sans-serif;
 }
+
+.rock-salt-font {
+	font-family: "Rock Salt", cursive;
+}
+
 img {
 	max-width: 100%;
 }
+
 hr.separator {
 	border-top: 1px solid #353531;
 	margin: 70px auto 55px;
@@ -1229,7 +1233,7 @@ body.light .contact .custom-span-contact a {
 }
 
 .contact .contactform .output_message.success:before {
-	font-family: Poppins;
+	font-family: FontAwesome;
 	content: "\f14a";
 	padding-right: 10px;
 }
@@ -1239,7 +1243,7 @@ body.light .contact .custom-span-contact a {
 }
 
 .contact .contactform .output_message.error:before {
-	font-family: Poppins;
+	font-family: FontAwesome;
 	content: "\f071";
 	padding-right: 10px;
 }

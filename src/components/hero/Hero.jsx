@@ -3,7 +3,6 @@ import heroImgMobile from "../../../public/assets/img/hero/grinSmile.png";
 import AboutMain from "../about";
 import Image from "next/image";
 import NavBar from "../navBar";
-import { rockSalt } from "../../pages/_app";
 
 const heroContent = {
 	heroImage: "assets/img/hero/sticker1.png",
@@ -48,14 +47,13 @@ const Hero = () => {
 								// style={{ width: "50%", height: "50%" }}
 							/>
 							<h1
-								className={`text-uppercase`}
+								className="text-uppercase poppins-font"
 								style={{
 									fontSize: "3.4rem",
 									lineHeight: "1.9",
 									letterSpacing: "0.3rem",
 									fontWeight: "800",
 									textShadow: "10px 5px 20px #D8D8D5",
-									fontFamily: rockSalt,
 								}}
 							>
 								{""} {heroContent.heroTitleName}.
