@@ -10,6 +10,13 @@ import Social from "../components/Social";
 import Contact from "../components/Contact";
 import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
+import { Comforter } from "@next/font/google";
+
+const comforter = Comforter({
+	weight: "400",
+	style: "normal",
+	subsets: ["latin"],
+});
 
 const menuItem = [
 	{ icon: "fa-home", menuName: "Home" },
@@ -31,16 +38,16 @@ const HomeDark = () => {
 				<SwitchDark />
 				{/* End Switcher */}
 				<Tabs>
-					{/* <div className="header">
-            <TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
-              {menuItem.map((item, i) => (
-                <Tab className="icon-box" key={i}>
-                  <i className={`fa ${item.icon}`}></i>
-                  <h2>{item.menuName}</h2>
-                </Tab>
-              ))}
-            </TabList>
-          </div> */}
+					<div className="header">
+						<TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
+							{menuItem.map((item, i) => (
+								<Tab className="icon-box" key={i}>
+									<i className={`fa ${item.icon}`}></i>
+									<h2>{item.menuName}</h2>
+								</Tab>
+							))}
+						</TabList>
+					</div>
 					{/* End Menu Content */}
 
 					<div className="tab-panel_list">
@@ -54,6 +61,20 @@ const HomeDark = () => {
 								<div className="color-block d-none d-lg-block"></div>
 								<Hero />
 							</div>
+							<section id="about">
+								<div className="gradient-line"></div>
+								<div className="about-section">
+									<h2
+										style={{
+											fontSize: "4.5rem",
+											marginBottom: "3rem",
+										}}
+									>
+										About Me
+									</h2>
+									<AboutMain />
+								</div>
+							</section>
 						</TabPanel>
 						{/* Hero Content Ends */}
 

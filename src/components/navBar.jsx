@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import { Poppins } from "@next/font/google";
+import { useEffect, useState } from "react";
 
 // import Logo from "../../public/assets/img/hero/logo.png";
 
@@ -13,17 +14,37 @@ const poppins = Poppins({
 });
 
 function NavBar() {
+	const [navbarBg, setNavbarBg] = useState("transparent");
+
+	useEffect(() => {
+		const handleScroll = () => {
+			console.log("Scroll position:", window.scrollY); // Debugging log
+			if (window.scrollY > 50) {
+				setNavbarBg("#eee");
+			} else {
+				setNavbarBg("transparent");
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<Navbar
 			fixed="top"
 			expand="lg"
 			className="nav-bar custom-navbar"
-			bg="transparent"
+			// bg="transparent"
 			data-bs-theme="light"
 			style={{
 				paddingTop: "3px",
 				paddingBottom: "3px",
 				fontSize: "1.3rem",
+				backgroundColor: navbarBg,
 			}}
 		>
 			<Container>
@@ -33,7 +54,7 @@ function NavBar() {
 						alt="logo"
 						width={65}
 						height={40}
-						class="logo"
+						className="logo"
 						style={{
 							paddingRight: "10px",
 						}}
@@ -47,28 +68,28 @@ function NavBar() {
 						</Nav.Link>
 						<Nav.Link
 							className={poppins.className}
-							href="#link"
+							href="#about"
 							style={{ marginLeft: "12px" }}
 						>
 							About
 						</Nav.Link>
 						<Nav.Link
 							className={poppins.className}
-							href="#link"
+							href="#portfolio"
 							style={{ marginLeft: "12px" }}
 						>
 							Portfolio
 						</Nav.Link>
 						<Nav.Link
 							className={poppins.className}
-							href="#link"
+							href="#blog"
 							style={{ marginLeft: "12px" }}
 						>
 							Blog
 						</Nav.Link>
 						<Nav.Link
 							className={poppins.className}
-							href="#link"
+							href="#contact"
 							style={{ marginLeft: "12px" }}
 						>
 							Contact

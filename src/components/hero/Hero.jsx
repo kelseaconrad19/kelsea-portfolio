@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import heroImgMobile from "../../../public/assets/img/hero/grinSmile.png";
-import AboutMain from "../about";
 import Image from "next/image";
 import NavBar from "../navBar";
 import { Comforter } from "@next/font/google";
@@ -13,7 +11,7 @@ const comforter = Comforter({
 
 const heroContent = {
 	heroImage: "assets/img/hero/sticker1.png",
-	heroMobileImage: heroImgMobile,
+	heroMobileImage: "/assets/img/hero/grinSmile.png",
 	heroTitleName: "Finally Creative",
 	heroDesignation: "Where Function Meets Imagination",
 	heroDescriptions: ``,
@@ -22,7 +20,12 @@ const heroContent = {
 
 const Hero = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	// Log when the component is rendered
+	console.log("Hero component rendered");
+
 	function toggleModalOne() {
+		// Log the state change on button click
+		console.log("Button clicked, toggling isOpen. Current value:", isOpen);
 		setIsOpen(!isOpen);
 	}
 
@@ -40,19 +43,21 @@ const Hero = () => {
 						className="col-lg-4 bg position-fixed d-none d-lg-block"
 						style={{
 							backgroundImage: `url(${heroContent.heroImage})`,
-							// width: "30%",
-							// height: "80%",
-							// marginLeft: "5%",
 						}}
 					></div>
-					<div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
+					<div className="col-12 col-lg-8 offset-lg-4 home-details text-center text-lg-start">
 						<div>
+							{/* Log the heroMobileImage to make sure it's correct */}
+							{console.log("Hero mobile image:", heroContent.heroMobileImage)}
+
 							<Image
 								src={heroContent.heroMobileImage}
 								className="img-fluid main-img-mobile d-sm-block d-lg-none"
 								alt="hero man"
-								// style={{ width: "50%", height: "50%" }}
+								width={500}
+								height={500}
 							/>
+
 							<h1
 								className={comforter.className}
 								style={{
@@ -63,6 +68,7 @@ const Hero = () => {
 									textShadow: "10px 5px 20px #D8D8D5",
 								}}
 							>
+								{console.log("Hero title name:", heroContent.heroTitleName)}
 								{""} {heroContent.heroTitleName}.
 								<span>{heroContent.heroDesignation}</span>
 							</h1>
@@ -74,55 +80,7 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<div class="gradient-line"></div>
-				<div className="about-section">
-					<h2
-						className={comforter.className}
-						style={{
-							fontSize: "4.5rem",
-							marginBottom: "3rem",
-						}}
-					>
-						About Me
-					</h2>
-					<AboutMain />
-				</div>
 			</div>
-			{/* End home-details-container */}
-			{/* <div>
-				<AboutMain />
-			</div> */}
-			{/* Start Modal for About More– */}
-			{/* <Modal
-				isOpen={isOpen}
-				onRequestClose={toggleModalOne}
-				contentLabel="My dialog"
-				className="custom-modal dark hero"
-				overlayClassName="custom-overlay dark"
-				closeTimeoutMS={500}
-			>
-				<div>
-					<button className="close-modal" onClick={toggleModalOne}>
-						<Image src={cancelImg} alt="close icon" />
-					</button> */}
-			{/* End close icon */}
-
-			{/* <div className="box_inner about">
-						<div data-aos="fade-up" data-aos-duration="1200">
-							<div className="title-section text-start text-sm-center">
-								<h1>
-									ABOUT <span>ME</span>
-								</h1>
-								<span className="title-bg">Resume</span>
-							</div> */}
-			{/* End title */}
-			{/* <AboutMain />
-						</div>
-					</div>
-				</div> */}
-			{/* End modal box news */}
-			{/* </Modal> */}
-			{/* End  Modal for About More */}
 		</>
 	);
 };

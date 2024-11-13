@@ -652,13 +652,13 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 /*** Homepage ***/
 
 .home .color-block {
-	position: fixed;
+	position: absolute;
 	height: 200%;
 	width: 100%;
 	transform: rotate(-15deg);
 	left: -76%;
 	top: -50%;
-	z-index: -1;
+	z-index: -1 !important;
 	box-shadow: 1px 2px 10px #d8d8d5;
 }
 
@@ -738,6 +738,8 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 	background-color: #353531;
 	padding: 80px 0;
 	color: #fff;
+	position: relative;
+	z-index: 10;
 }
 
 .about-heading {
@@ -2205,15 +2207,16 @@ button:focus {
 		to right,
 		#fe5f55,
 		#fe5f55 25%,
-		#06ea06 25%,
-		#06ea06 50%,
+		#a599b5 25%,
+		#a599b5 50%,
 		#47a8bd 50%,
 		#47a8bd 75%,
-		#a599b5 75%,
-		#a599b5
+		#06ea06 75%,
+		#06ea06
 	);
 	z-index: 5;
 	height: 1rem;
+	position: relative;
 }
 
 // skill pills

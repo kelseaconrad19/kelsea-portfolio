@@ -2,6 +2,7 @@ import React from "react";
 import Achievements from "./Achievements";
 import Education from "./Education";
 import Experience from "./Experience";
+import Portfolio from "../portfolio/Portfolio";
 import { poppins } from "../navBar";
 import classNames from "classnames";
 
@@ -67,31 +68,9 @@ const index = () => {
 					{/* Achievements Ends */}
 				</div>
 				{/* End .row */}
-
-				{/* <hr className="separator" /> */}
-
-				<hr className="separator mt-4" />
-
-				{/* Experience & Education Starts */}
-				<div className="row">
-					<div className="col-12">
-						<h3 className={classNames(poppins.className, "exp-header", "mb-5")}>
-							Experience <span>&</span> Education
-						</h3>
-					</div>
-					<div className="col-lg-6 m-15px-tb">
-						<div className="resume-box">
-							<Experience />
-						</div>
-					</div>
-					<div className="col-lg-6 m-15px-tb">
-						<div className="resume-box">
-							<Education />
-						</div>
-					</div>
-				</div>
-				{/*  Experience & Education Ends */}
 			</div>
+
+			{/* <hr className="separator" /> */}
 		</section>
 	);
 };
