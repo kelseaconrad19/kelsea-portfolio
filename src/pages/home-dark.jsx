@@ -63,9 +63,9 @@ const HomeDark = () => {
 								<div className="gradient-line"></div>
 								<div className="about-section">
 									<h2
-										className="about-heading"
+										className={`about-heading ${comforter.className}`}
 										style={{
-											fontSize: "3rem",
+											fontSize: "4rem",
 											marginBottom: "3.5rem",
 										}}
 									>
