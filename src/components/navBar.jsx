@@ -43,14 +43,14 @@ function NavBar() {
 			style={{
 				paddingTop: "3px",
 				paddingBottom: "3px",
-				fontSize: "1.3rem",
+				fontSize: "1rem",
 				backgroundColor: navbarBg,
 			}}
 		>
 			<Container>
 				<Navbar.Brand href="#home">
 					<Image
-						src="/assets/img/hero/logo1.png"
+						src="/assets/img/hero/logo2.png"
 						alt="logo"
 						width={65}
 						height={40}

@@ -40,10 +40,15 @@ Version: 1.0
   ******* Colors *******
   - #06ea06
   - #353531
-  - #eee
+  - #FCFCFC
   - #666 
   - #fff
-  - #47a8bd
+  - #47a8bd - kept this here in case I change my mind
+	- #266DD3 - replace 47a8bd
+	- #A599B5
+	- #BCCCE0 - replace A599B5
+	- #F2A359
+	- #FE5F55
 -------------------------------------------------------------------*/
 
 /* [ GENERAL ] */
@@ -69,7 +74,7 @@ body {
 	background-position: center;
 	height: 100%;
 	width: 100%;
-	background-color: #eeeeee;
+	background-color: #fcfcfc;
 }
 
 .poppins-font {
@@ -146,7 +151,7 @@ body.home.light .bg {
 }
 
 body.light .preloader .black_wall {
-	background-color: #eee;
+	background-color: #fcfcfc;
 }
 
 body.light .preloader {
@@ -167,7 +172,7 @@ body.light .about .box-stats {
 
 body.light .about .c100,
 body.light .about .resume-box .time {
-	background-color: #eee;
+	background-color: #fcfcfc;
 }
 
 body.light .about .resume-box .time,
@@ -216,12 +221,12 @@ body.light .contact .contactform textarea:focus {
 
 body.light .contact ul.social li a {
 	color: #666;
-	background: #eee;
+	background: #fcfcfc;
 }
 
 body.light .contact ul.social li a:hover {
-	background: #eee;
-	color: #eee;
+	background: #fcfcfc;
+	color: #fcfcfc;
 }
 
 body.light .blog .post-content {
@@ -245,8 +250,8 @@ body.light .blog .post-container:hover {
 }
 body.light .blog .page-link {
 	color: #666;
-	background-color: #eee;
-	border: 1px solid #eee;
+	background-color: #fcfcfc;
+	border: 1px solid #fcfcfc;
 }
 
 body.light .blog-post .meta {
@@ -262,7 +267,7 @@ body.light hr.separator {
 }
 
 body.light .header ul.icon-menu li.icon-box {
-	background-color: #eee;
+	background-color: #fcfcfc;
 	&:hover {
 		background: var(--main-primary-color);
 	}
@@ -284,7 +289,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 
 @media (max-width: 991px) {
 	body.light .main-img-mobile {
-		border: 4px solid #eee;
+		border: 4px solid #fcfcfc;
 	}
 
 	body.light #menuToggle {
@@ -293,7 +298,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 
 	body.light #menuToggle,
 	body.light #menu {
-		background: #eee;
+		background: #fcfcfc;
 	}
 
 	body.light #menuToggle > span,
@@ -310,7 +315,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 	}
 
 	body.light .portfolio .slideshow nav {
-		background: #eee;
+		background: #fcfcfc;
 		border-bottom: 1px solid #ddd;
 	}
 
@@ -376,7 +381,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 			background: #fff;
 			box-shadow: 0 0px 47px #dedede;
 			ul.icon-menu li.icon-box {
-				background: #eee !important;
+				background: #fcfcfc !important;
 			}
 		}
 	}
@@ -659,7 +664,18 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 	left: -76%;
 	top: -50%;
 	z-index: -1 !important;
+}
+
+.color-block2 {
+	position: absolute;
+	height: 150%;
+	width: 100%;
+	transform: rotate(-48deg);
+	left: 66%;
+	top: -60%;
+	z-index: -2 !important;
 	box-shadow: 1px 2px 10px #d8d8d5;
+	background-color: #266dd3;
 }
 
 .home .bg {
@@ -716,7 +732,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 }
 
 .home .home-details h6 {
-	color: #eee;
+	color: #fcfcfc;
 	font-size: 22px;
 	font-weight: 400;
 	display: block;
@@ -743,10 +759,10 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 }
 
 .about-heading {
-	margin: 0 0 80px 0;
+	margin: 0 0 0px 0;
 	color: #fff;
-	font-size: 45px;
-	// font-family: "Rock Salt", cursive;
+	font-size: 4rem;
+	font-family: "Comforter", cursive;
 }
 /* Personal Info List */
 
@@ -869,7 +885,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 
 .about .resume-box p {
 	margin: 0;
-	color: #eee;
+	color: #fcfcfc;
 	font-size: 14px;
 }
 
@@ -1241,7 +1257,7 @@ body.light .contact .custom-span-contact a {
 }
 
 .contact .contactform .output_message.error {
-	background: #47a8bd;
+	background: #266dd3;
 }
 
 .contact .contactform .output_message.error:before {
@@ -1368,7 +1384,7 @@ body.light .contact .custom-span-contact a {
 
 .blog-post {
 	.meta {
-		color: #eee;
+		color: #fcfcfc;
 		font-size: 13px;
 	}
 	.img-fluid {
@@ -1939,7 +1955,7 @@ body.light .contact .custom-span-contact a {
 }
 body.light .tab-panel_list > div {
 	&::after {
-		background-color: #eee;
+		background-color: #fcfcfc;
 	}
 }
 
@@ -2207,15 +2223,15 @@ button:focus {
 		to right,
 		#fe5f55,
 		#fe5f55 25%,
-		#a599b5 25%,
-		#a599b5 50%,
-		#47a8bd 50%,
-		#47a8bd 75%,
+		#266dd3 25%,
+		#266dd3 50%,
+		#f2a359 50%,
+		#f2a359 75%,
 		#06ea06 75%,
 		#06ea06
 	);
 	z-index: 5;
-	height: 1rem;
+	height: 0.5rem;
 	position: relative;
 }
 
@@ -2246,11 +2262,11 @@ button:focus {
 }
 
 .bg-blue {
-	background-color: #47a8bd;
+	background-color: #266dd3;
 }
 
 .bg-purple {
-	background-color: #a599b5;
+	background-color: #f2a359;
 }
 
 .bg-orange {

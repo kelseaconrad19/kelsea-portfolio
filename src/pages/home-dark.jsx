@@ -35,8 +35,6 @@ const HomeDark = () => {
 			<SEO pageTitle={`Kelsea Conrad`} />
 
 			<div className="yellow">
-				<SwitchDark />
-				{/* End Switcher */}
 				<Tabs>
 					<div className="header">
 						<TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
@@ -65,14 +63,40 @@ const HomeDark = () => {
 								<div className="gradient-line"></div>
 								<div className="about-section">
 									<h2
+										className="about-heading"
 										style={{
-											fontSize: "4.5rem",
-											marginBottom: "3rem",
+											fontSize: "3rem",
+											marginBottom: "3.5rem",
 										}}
 									>
 										About Me
 									</h2>
 									<AboutMain />
+								</div>
+							</section>
+							<section id="portfolio">
+								<div className="gradient-line"></div>
+
+								<div
+									className="about-section"
+									style={{
+										backgroundColor: "#FCFCFC",
+									}}
+								>
+									<h2
+										className={`about-heading ${comforter.className}`}
+										style={{
+											fontSize: "4rem",
+											marginBottom: "3.5rem",
+											color: "#353531",
+											textAlign: "left",
+											marginLeft: "10%",
+										}}
+									>
+										Recent Projects
+									</h2>
+									<Portfolio />
+									{/* <div className="color-block2"></div> */}
 								</div>
 							</section>
 						</TabPanel>
