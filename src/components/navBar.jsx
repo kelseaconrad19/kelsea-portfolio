@@ -43,12 +43,12 @@ function NavBar() {
 			style={{
 				paddingTop: "3px",
 				paddingBottom: "3px",
-				fontSize: "1rem",
+				fontSize: "1.2rem",
 				backgroundColor: navbarBg,
 			}}
 		>
 			<Container>
-				<Navbar.Brand href="#home">
+				<Navbar.Brand href="/">
 					<Image
 						src="/assets/img/hero/logo2.png"
 						alt="logo"
@@ -63,7 +63,7 @@ function NavBar() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link className={poppins.className} href="#home">
+						<Nav.Link className={poppins.className} href="/">
 							Home
 						</Nav.Link>
 						<Nav.Link
@@ -80,13 +80,13 @@ function NavBar() {
 						>
 							Portfolio
 						</Nav.Link>
-						<Nav.Link
+						{/* <Nav.Link
 							className={poppins.className}
 							href="#blog"
 							style={{ marginLeft: "12px" }}
 						>
 							Blog
-						</Nav.Link>
+						</Nav.Link> */}
 						<Nav.Link
 							className={poppins.className}
 							href="#contact"

@@ -8,12 +8,12 @@ import classNames from "classnames";
 
 const index = () => {
 	return (
-		<section className="main-content ">
-			<div className="container">
+		<section className="main-content">
+			<div className="container" style={{ width: "100%" }}>
 				<div className="row">
 					{/* Personal Info Starts */}
 
-					<div className="col-xl-6 col-lg-5 col-12">
+					<div className="col-xl-6 col-lg-4 col-12">
 						<div className="row">
 							<div className="col-12">
 								<h3
@@ -35,7 +35,52 @@ const index = () => {
 										lineHeight: "1.8",
 									}}
 								>
-									This will be information about my story!
+									Hi, I’m Kelsea Conrad, a full-stack developer with a passion
+									for creating user-friendly and impactful digital experiences.
+									With a strong foundation in both front-end and back-end
+									development, I specialize in transforming complex ideas into
+									intuitive and visually engaging solutions.{" "}
+								</p>
+								<p
+									className={poppins.className}
+									style={{
+										marginTop: "10px",
+										fontSize: "1.1rem",
+										color: "eee",
+										lineHeight: "1.8",
+									}}
+								>
+									I started my journey in tech through hands-on projects, where
+									I honed my skills in technologies like React, Next.js, Python,
+									Flask, and SQL. I also have extensive experience with
+									WordPress from the first time I started Finally Creative.{" "}
+								</p>
+								<p
+									className={poppins.className}
+									style={{
+										marginTop: "10px",
+										fontSize: "1.1rem",
+										color: "eee",
+										lineHeight: "1.8",
+									}}
+								>
+									Before diving into software development, I worked as an
+									educator, which sharpened my abilities to communicate
+									effectively, manage projects, and think critically—skills that
+									I now apply to building efficient, scalable applications.{" "}
+								</p>
+
+								<p
+									className={poppins.className}
+									style={{
+										marginTop: "10px",
+										fontSize: "1.1rem",
+										color: "eee",
+										lineHeight: "1.8",
+									}}
+								>
+									Feel free to explore my projects, and don’t hesitate to reach
+									out—I’d love to connect and collaborate on your next idea.
 								</p>
 							</div>
 							{/* End .col */}

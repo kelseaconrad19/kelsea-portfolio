@@ -1,149 +1,209 @@
 .portfolio-main {
-	.portfolio-tab-list {
-		margin-bottom: 25px !important;
+	// padding: 2rem;
+	display: block;
+}
+
+.container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.tab-container {
+	margin-right: auto !important;
+	margin-left: auto !important;
+	width: 100%;
+	max-width: 80rem;
+}
+
+// padding-top: 7rem;
+// padding-bottom: 7rem;
+// display: flex;
+// flex-wrap: wrap;
+// gap: 2rem;
+// justify-content: center;
+
+.portfolio-card {
+	transition: transform 0.3s;
+	cursor: pointer;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.portfolio-content {
+	display: grid;
+	// width: 100%;
+	grid-template-columns: 0.75fr 1fr;
+	grid-template-rows: auto;
+	column-gap: 5rem;
+	row-gap: 4rem;
+	grid-auto-columns: 1fr;
+	align-items: center;
+	margin-top: 4rem;
+	background: #fcfcfc;
+}
+
+.image-container {
+	border-radius: 1rem;
+	overflow: hidden;
+	height: auto;
+	width: 500px;
+	box-shadow: 1px 2px 20px #e9e9e7;
+	// position: relative;
+	// overflow: hidden;
+}
+
+.project-image {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+
+.project-description {
+	color: #555;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+.project-title {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
+}
+
+.portfolio-tab-list {
+	margin-bottom: 2rem !important;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	gap: 1rem;
+}
+
+.portfolio-tab-list li {
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	border: 1px solid transparent;
+	transition: all 0.3s ease-in-out;
+	color: #353531;
+}
+
+.portfolio-tab-list li:hover,
+.portfolio-tab-list li.react-tabs__tab--selected {
+	color: #ffc107;
+	border-bottom: 2px solid #ffc107;
+}
+
+.portfolio-card:hover {
+	transform: translateY(-5px);
+}
+
+.portfolio-card:hover .project-image {
+	transform: scale(1.05);
+}
+
+.project-details {
+	flex: 1;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+	.portfolio-card {
+		max-width: 100%;
 	}
 
-	.react-tabs {
-		&__tab {
-			position: static;
-		}
+	.tab-container {
+		flex-direction: column;
+	}
 
-		&__tab-list {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border-bottom: none;
-			margin-bottom: 4rem;
-		}
-
-		&__tab {
-			color: #353531;
-			transition: all 0.4s;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			text-decoration: none;
-			list-style: none;
-		}
-
-		&__tab--selected {
-			color: #ffc107;
-			background-color: transparent;
-			border: none;
-			background: transparent;
-		}
-
-		&__tab-panel {
-			.tab-container {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				// grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-
-				@media only screen and (max-width: $tab-land) {
-					grid-template-columns: repeat(2, 1fr);
-				}
-				@media only screen and (max-width: $mbl-land) {
-					grid-template-columns: repeat(1, 1fr);
-				}
-
-				gap: 30px;
-				padding-bottom: 70px;
-			}
-
-			div {
-				width: 100%;
-				height: 100%;
-				border-radius: 1rem;
-			}
-		}
-		.tab-content {
-			width: 100%;
-			height: 229px;
-			position: relative;
-			cursor: pointer;
-			display: flex;
-
-			img {
-				@include img-size;
-				position: absolute;
-				top: 0;
-				left: 0;
-				border-radius: 0.5rem;
-			}
-
-			h3 {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				height: 100%;
-				width: 100%;
-				background-color: var(--main-primary-color);
-				opacity: 0;
-				visibility: hidden;
-				transition: all 0.5s;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-size: 18px;
-				color: #fff;
-				text-transform: uppercase;
-				border-radius: 0.5rem;
-
-				.conent-title {
-					position: relative;
-					transform: translateY(-20px);
-					transition: 0.5s;
-				}
-			}
-
-			&:hover {
-				h3 {
-					opacity: 1;
-					visibility: visible;
-
-					.conent-title {
-						transform: translateY(0);
-					}
-				}
-			}
-		}
+	.portfolio-card {
+		flex-direction: column;
 	}
 }
-.filter_1 {
+
+/* Modal Styles */
+.modal_portfolio .modal__content {
+	background: #fff;
+	border-radius: 8px;
+	padding: 2rem;
+	max-width: 800px;
+	// margin: 5rem 5rem;
+	color: #353531;
+}
+
+.modal_portfolio .modal__outside {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.modal_portfolio .close-modal img {
 	filter: invert(1);
+	transition: filter 0.3s;
 }
-body.light {
-	.portfolio-main {
-		.react-tabs .tab-content div,
-		.react-tabs .tab-content h3 {
-			background: var(--main-primary-color);
-		}
-		&.portfolio-main .react-tabs__tab {
-			color: #3b3a3a;
-		}
-		.portfolio-tab-list li:hover,
-		.portfolio-tab-list li.react-tabs__tab--selected {
-			color: var(--main-primary-color);
-		}
-	}
-	.modal_portfolio .modal__content {
-		background: #fff;
-	}
-	.modal_portfolio .modal__outside {
-		background: rgba(0, 0, 0, 0.65);
-	}
-	.modal_portfolio .close-modal img {
-		height: 100%;
-		width: 100%;
-		filter: invert(1);
-		&:hover {
-			filter: invert(0.9);
-		}
-	}
-	.modal_portfolio .modal__img {
-		background: #fff;
-	}
+
+.modal_portfolio .close-modal img:hover {
+	filter: invert(0.8);
+}
+
+.description-layout {
+	display: block;
+}
+
+.margin-bottom {
+	margin-top: 0rem !important;
+	margin-right: 0rem !important;
+	margin-left: 0rem !important;
+}
+
+.margin-xxsmall {
+	margin: 0.5rem;
+}
+
+.margin-small {
+	margin: 1.5rem;
+}
+
+.list-text-wrapper p {
+	color: #353531;
+}
+
+.project-tech-pills {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text-style-pill-small {
+	color: #353531;
+	border-radius: 30px;
+	margin-bottom: 0.8rem;
+	margin-right: 0.5rem;
+	padding: 0.3rem 1rem;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.25;
+}
+
+.icon-embed-xsmall {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+}
+
+.list-item {
+	display: flex;
+}
+
+.list-icon-wrapper {
+	flex: none;
+	align-self: flex-start;
+	margin-right: 1rem;
 }

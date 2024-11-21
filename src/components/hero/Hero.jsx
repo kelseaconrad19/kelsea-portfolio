@@ -31,7 +31,6 @@ const Hero = () => {
 
 	return (
 		<>
-			<NavBar />
 			<div className="hero-section">
 				<div
 					className="row home-details-container align-items-center"

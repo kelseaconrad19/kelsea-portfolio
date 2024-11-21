@@ -11,6 +11,7 @@ import Contact from "../components/Contact";
 import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
 import { Comforter } from "@next/font/google";
+import NavBar2 from "../components/navBar2";
 
 const comforter = Comforter({
 	weight: "400",
@@ -35,26 +36,19 @@ const HomeDark = () => {
 			<SEO pageTitle={`Kelsea Conrad`} />
 
 			<div className="yellow">
+				<NavBar2 />
 				<Tabs>
-					<div className="header">
-						<TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
-							{menuItem.map((item, i) => (
-								<Tab className="icon-box" key={i}>
-									<i className={`fa ${item.icon}`}></i>
-									<h2>{item.menuName}</h2>
-								</Tab>
-							))}
-						</TabList>
-					</div>
+					<div className="header"></div>
 					{/* End Menu Content */}
 
 					<div className="tab-panel_list">
 						{/* Hero Content Starts */}
-						<TabPanel className="home ">
+						<TabPanel className="home">
 							<div
 								className="container-fluid main-container container-home p-0 g-0"
 								data-aos="fade-up"
 								data-aos-duration="1200"
+								id="hero"
 							>
 								<div className="color-block d-none d-lg-block"></div>
 								<Hero />
@@ -87,7 +81,7 @@ const HomeDark = () => {
 										className={`about-heading ${comforter.className}`}
 										style={{
 											fontSize: "4rem",
-											marginBottom: "3.5rem",
+											marginBottom: "2rem",
 											color: "#353531",
 											textAlign: "left",
 											marginLeft: "10%",
@@ -95,117 +89,59 @@ const HomeDark = () => {
 									>
 										Recent Projects
 									</h2>
+									<p
+										style={{
+											fontSize: "1.3rem",
+											marginBottom: "3.5rem",
+											color: "#353531",
+											textAlign: "left",
+											marginLeft: "10%",
+											maxWidth: "45%",
+										}}
+									>
+										I'm continuously updating this section with a variety of
+										projects I'm working on as a web and digital designer. From
+										website redesigns to business automation systems and side
+										projects, this section provides a snapshot of my current
+										work and the types of projects I'm focused on.
+									</p>
 									<Portfolio />
 									{/* <div className="color-block2"></div> */}
 								</div>
 							</section>
+
+							<section id="contact">
+								<div className="gradient-line"></div>
+
+								<div
+									className="contact-section padding-global"
+									style={{
+										backgroundColor: "#e9d2f4",
+									}}
+								>
+									<div className="container-large padding-section-large">
+										<h2
+											className={`contact-heading ${comforter.className}`}
+											style={{
+												fontSize: "4.3rem",
+												marginBottom: "2rem",
+												color: "#353531",
+												textAlign: "left",
+												fontFamily: "Poppins",
+												fontWeight: "800",
+												letterSpacing: "-.1rem",
+											}}
+										>
+											Get in Touch
+										</h2>
+
+										<Contact />
+										{/* <div className="color-block2"></div> */}
+									</div>
+								</div>
+							</section>
 						</TabPanel>
 						{/* Hero Content Ends */}
-
-						{/* About Content Starts */}
-						<TabPanel className="about">
-							<div data-aos="fade-up" data-aos-duration="1200">
-								<div className="title-section text-start text-sm-center">
-									<h1>
-										ABOUT <span>ME</span>
-									</h1>
-									<span className="title-bg">Resume</span>
-								</div>
-								{/* End title */}
-								<AboutMain />
-							</div>
-						</TabPanel>
-						{/* About Content Ends */}
-
-						{/* Portfolio Content Starts */}
-						<TabPanel className="portfolio professional">
-							<div
-								className="title-section text-start text-sm-center"
-								data-aos="fade-up"
-								data-aos-duration="1200"
-							>
-								<h1>
-									my <span>portfolio</span>
-								</h1>
-								<span className="title-bg">works</span>
-							</div>
-							{/* End title */}
-							<Portfolio />
-						</TabPanel>
-						{/* Portfolio Content Ends */}
-
-						{/* Contact Content Starts */}
-						<TabPanel className="contact">
-							<div
-								className="title-section text-start text-sm-center"
-								data-aos="fade-up"
-								data-aos-duration="1200"
-							>
-								<h1>
-									get in <span>touch</span>
-								</h1>
-								<span className="title-bg">contact</span>
-							</div>
-							<div
-								className="container"
-								data-aos="fade-up"
-								data-aos-duration="1200"
-							>
-								<div className="row">
-									{/*  Left Side Starts */}
-									<div className="col-12 col-lg-4">
-										<h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
-											{"Don't"} be shy !
-										</h3>
-										<p className="open-sans-font mb-4">
-											Feel free to get in touch with me. I am always open to
-											discussing new projects, creative ideas or opportunities
-											to be part of your visions.
-										</p>
-										<Address />
-										{/* End Address */}
-
-										<Social />
-										{/* End Social */}
-									</div>
-									{/* Left Side Ends */}
-
-									{/*  Contact Form Starts  */}
-									<div className="col-12 col-lg-8">
-										<Contact />
-									</div>
-									{/*  Contact Form Ends */}
-								</div>
-							</div>
-							{/* End .container */}
-						</TabPanel>
-						{/* Contact Content Ends */}
-
-						{/* Blog Content Starts */}
-						<TabPanel className="blog">
-							<div
-								className="title-section text-start text-sm-center "
-								data-aos="fade-up"
-								data-aos-duration="1200"
-							>
-								<h1>
-									my <span>blog</span>
-								</h1>
-								<span className="title-bg">posts</span>
-							</div>
-							<div
-								className="container"
-								data-aos="fade-up"
-								data-aos-duration="1200"
-							>
-								{/*  Articles Starts  */}
-								<div className="row pb-50">
-									<Blog />
-								</div>
-								{/* Articles Ends */}
-							</div>
-						</TabPanel>
-						{/* Blog Content Ends */}
 					</div>
 				</Tabs>
 			</div>
