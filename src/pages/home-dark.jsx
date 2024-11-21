@@ -99,11 +99,12 @@ const HomeDark = () => {
 											maxWidth: "45%",
 										}}
 									>
-										I'm continuously updating this section with a variety of
-										projects I'm working on as a web and digital designer. From
-										website redesigns to business automation systems and side
-										projects, this section provides a snapshot of my current
-										work and the types of projects I'm focused on.
+										I will continuously update this section with a variety of
+										projects I am currently working on as a web and digital
+										designer. From website redesigns to business automation
+										systems and side projects, this section provides a snapshot
+										of my current work and the types of projects I am focused
+										on.
 									</p>
 									<Portfolio />
 									{/* <div className="color-block2"></div> */}

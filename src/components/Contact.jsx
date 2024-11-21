@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -122,9 +123,13 @@ const Contact = () => {
 					</div>
 				</div>
 				{/* End .col */}
-				<div className="row contact7_form_block w-form">
-					<img src="assets/img/hi-image.png" alt="hi" className="contact-img" />
-				</div>
+				<Image
+					src="/assets/img/hi-image.png"
+					alt="hi"
+					className="contact-img"
+					width={500}
+					height={500}
+				/>
 			</form>
 		</div>
 	);
