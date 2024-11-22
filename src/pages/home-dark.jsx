@@ -36,7 +36,7 @@ const HomeDark = () => {
 			<SEO pageTitle={`Kelsea Conrad`} />
 
 			<div className="yellow">
-				<NavBar2 />
+				{/* <NavBar2 /> */}
 				<Tabs>
 					<div className="header"></div>
 					{/* End Menu Content */}
