@@ -97,6 +97,7 @@ const HomeDark = () => {
 											textAlign: "left",
 											marginLeft: "10%",
 											maxWidth: "45%",
+											fontFamily: "Poppins",
 										}}
 									>
 										I will continuously update this section with a variety of
