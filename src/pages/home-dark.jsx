@@ -21,8 +21,6 @@ const comforter = Comforter({
 	subsets: ["latin"],
 });
 
-const p
-
 const menuItem = [
 	{ icon: "fa-home", menuName: "Home" },
 	{ icon: "fa-user", menuName: "About" },
