@@ -12,12 +12,16 @@ import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
 import { Comforter } from "@next/font/google";
 import NavBar2 from "../components/navBar2";
+import { poppins } from "../navBar";
+import classNames from "classnames";
 
 const comforter = Comforter({
 	weight: "400",
 	style: "normal",
 	subsets: ["latin"],
 });
+
+const p
 
 const menuItem = [
 	{ icon: "fa-home", menuName: "Home" },
@@ -90,6 +94,7 @@ const HomeDark = () => {
 										Recent Projects
 									</h2>
 									<p
+										className={`portfolio-text ${poppins.className}`}
 										style={{
 											fontSize: "1.3rem",
 											marginBottom: "3.5rem",
@@ -97,7 +102,7 @@ const HomeDark = () => {
 											textAlign: "left",
 											marginLeft: "10%",
 											maxWidth: "45%",
-											fontFamily: "Poppins",
+											// fontFamily: "Poppins",
 										}}
 									>
 										I will continuously update this section with a variety of
