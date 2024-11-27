@@ -12,11 +12,17 @@ import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
 import { Comforter } from "@next/font/google";
 import NavBar2 from "../components/navBar2";
-import { poppins } from "../navBar";
+import { Poppins } from "@next/font/google";
 import classNames from "classnames";
 
 const comforter = Comforter({
 	weight: "400",
+	style: "normal",
+	subsets: ["latin"],
+});
+
+const poppins = Poppins({
+	weight: ["400", "500", "600", "700"],
 	style: "normal",
 	subsets: ["latin"],
 });
