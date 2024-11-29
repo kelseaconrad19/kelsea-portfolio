@@ -100,7 +100,7 @@ const HomeDark = () => {
 									<p
 										className={`portfolio-text ${poppins.className}`}
 										style={{
-											fontSize: "1.3rem",
+											fontSize: "1.1rem",
 											marginBottom: "3.5rem",
 											color: "#353531",
 											textAlign: "left",
@@ -132,15 +132,14 @@ const HomeDark = () => {
 								>
 									<div className="container-large padding-section-large">
 										<h2
-											className={`contact-heading ${comforter.className}`}
+											className={`about-heading ${comforter.className}`}
 											style={{
-												fontSize: "4.3rem",
+												fontSize: "4.6rem",
 												marginBottom: "2rem",
 												color: "#353531",
-												textAlign: "left",
-												fontFamily: "Poppins",
-												fontWeight: "800",
-												letterSpacing: "-.1rem",
+												textAlign: "center",
+												fontWeight: "400",
+												letterSpacing: ".1rem",
 											}}
 										>
 											Get in Touch

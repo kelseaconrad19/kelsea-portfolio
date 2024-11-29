@@ -124,11 +124,11 @@ const Contact = () => {
 				</div>
 				{/* End .col */}
 				<Image
-					src="/assets/img/hi-image.png"
+					src="/assets/img/hi-image2.png"
 					alt="hi"
 					className="contact-img"
-					width={500}
-					height={500}
+					width={400}
+					height={400}
 				/>
 			</form>
 		</div>
