@@ -44,12 +44,12 @@ const HomeDark = () => {
 			<SEO pageTitle={`Kelsea Conrad`} />
 
 			<div className="yellow">
-				{/* <NavBar2 /> */}
+				<NavBar2 />
 				<Tabs>
 					<div className="header"></div>
 					{/* End Menu Content */}
 
-					<div className="tab-panel_list">
+					<div className="content">
 						{/* Hero Content Starts */}
 						<TabPanel className="home">
 							<div

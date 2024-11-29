@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import NavBar from "../navBar";
 import { Comforter } from "@next/font/google";
 
 const comforter = Comforter({
@@ -22,6 +21,13 @@ const Hero = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	// Log when the component is rendered
 	console.log("Hero component rendered");
+
+	const scrollToSection = (id) => {
+		const section = document.getElementById(id);
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 
 	function toggleModalOne() {
 		// Log the state change on button click
@@ -72,7 +78,10 @@ const Hero = () => {
 								<span>{heroContent.heroDesignation}</span>
 							</h1>
 							<p className="open-sans-font">{heroContent.heroDescriptions}</p>
-							<button className="button" onClick={toggleModalOne}>
+							<button
+								className="button"
+								onClick={() => scrollToSection("contact")}
+							>
 								<span className="button-text">{heroContent.heroBtn}</span>
 								<span className="button-icon fa fa-arrow-right"></span>
 							</button>

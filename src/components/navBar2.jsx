@@ -1,43 +1,72 @@
-import React from "react";
-import Link from "next/link";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const NavBar2 = () => {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	// Add scroll event listener
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 20);
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	const scrollToSection = (id) => {
+		const section = document.getElementById(id);
+		if (section) {
+			section.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
-		<div>
-			<nav className="navbar navbar-expand-lg navbar-light bg-dark bg-opacity-75 text-light">
-				<div className="container">
-					<Link className="navbar-brand text-light font-bold" href="/">
-						Finally Creative
-					</Link>
-					<div className="collapse navbar-collapse" id="navbarNav">
-						<ul className="navbar-nav mr-auto">
-							<li className="nav-item">
-								<Link
-									href="http://www.kelseaconrad.com/#about"
-									className="nav-item nav-link text-light"
-								>
-									About
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link
-									href="#portfolio"
-									className="nav-item nav-link text-light"
-								>
-									Portfolio
-								</Link>
-							</li>
-							<li className="nav-item">
-								<Link href="#contact" className="nav-item nav-link text-light">
-									Contact
-								</Link>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
+		<nav className={`navbar ${isScrolled ? "navbar-scrolled" : ""}`}>
+			{/* Add the logo here */}
+			<Image
+				src="/assets/img/hero/logo4.png"
+				alt="Logo"
+				className="logo"
+				width={50}
+				height={40}
+			/>
+			<ul className="navbar-list">
+				<li>
+					<button
+						className="navbar-link"
+						onClick={() => scrollToSection("hero")}
+					>
+						Home
+					</button>
+				</li>
+				<li>
+					<button
+						className="navbar-link"
+						onClick={() => scrollToSection("about")}
+					>
+						About
+					</button>
+				</li>
+				<li>
+					<button
+						className="navbar-link"
+						onClick={() => scrollToSection("portfolio")}
+					>
+						Portfolio
+					</button>
+				</li>
+				<li>
+					<button
+						className="navbar-link"
+						onClick={() => scrollToSection("contact")}
+					>
+						Contact
+					</button>
+				</li>
+			</ul>
+		</nav>
 	);
 };
 
