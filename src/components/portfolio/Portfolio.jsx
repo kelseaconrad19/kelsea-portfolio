@@ -27,6 +27,7 @@ const techClassMapping = {
 	SocketIO: "bg-purple",
 	API: "bg-purple",
 	HTML: "bg-green",
+	Django: "bg-purple",
 };
 
 const Portfolio = () => {

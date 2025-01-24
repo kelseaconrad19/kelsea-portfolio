@@ -1,10 +1,41 @@
 import PokeAPI from "../../../public/assets/img/portfolio/pokeapi.png";
+import GRNLITE from "../../../public/assets/img/portfolio/grnlite-home.png";
 import Image2 from "../../../public/assets/img/portfolio/sidequests.png";
 import Image3 from "../../../public/assets/img/portfolio/ecomm1.png";
 
 const PortfolioData = [
 	{
-		id: 1,
+	id: 1,
+		type: "GRNLITE Capstone Project",
+		image: GRNLITE,
+		tag: ["fullstack"],
+		description:
+			"A web application that connects authors with beta readers to facilitate collaboration on writing projects. Authors can create projects, upload manuscripts, and request feedback from beta readers, who can provide comments and suggestions about the text.",
+		techUsed:
+			"Technology: Using Django, Python, Javascript, HTML, and CSS, my team and I created a responsive platform that allows authors and beta readers to connect and collaborate on writing projects.",
+		skillsRequired:
+			"Skills: This project reflects my ability to design and implement a full-stack application that meets the needs of both authors and beta readers.",
+		mainTech: ["Django", "CSS", "Javascript"],
+		delayAnimation: "0",
+		modalDetails: [
+			{
+				project: "GRNLITE Capstone Project",
+				client: "Coding Temple",
+				language: "HTML, CSS, Javascript",
+				preview: "GRNLITE Capstone Project",
+				link: "https://kelseaconrad19.github.io/PokeAPISite/",
+				description:
+					"A web application that connects authors with beta readers to facilitate collaboration on writing projects. Authors can create projects, upload manuscripts, and request feedback from beta readers, who can provide comments and suggestions about the text.",
+				techUsed:
+					"Technology: Using Django, Python, Javascript, HTML, and CSS, my team and I created a responsive platform that allows authors and beta readers to connect and collaborate on writing projects.",
+				skillsRequired:
+					"Skills: This project reflects my ability to design and implement a full-stack application that meets the needs of both authors and beta readers.",
+				mainTech: ["Django", "CSS", "Javascript"],
+			},
+		],
+	},
+	{
+		id: 2,
 		type: "PokeAPI Project",
 		image: PokeAPI,
 		tag: ["frontend"],
@@ -34,7 +65,7 @@ const PortfolioData = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		type: "SideQuests Project",
 		image: Image2,
 		tag: ["frontend"],
@@ -64,7 +95,7 @@ const PortfolioData = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		type: "Ecommerce Project",
 		image: Image3,
 		tag: ["backend"],
