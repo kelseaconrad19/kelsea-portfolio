@@ -22,7 +22,7 @@ const PortfolioData = [
 			{
 				project: "GRNLITE Capstone Project",
 				client: "Coding Temple",
-				language: "HTML, CSS, Javascript",
+				language: "Django, CSS, Javascript",
 				preview: "GRNLITE Capstone Project",
 				link: "",
 				description:
