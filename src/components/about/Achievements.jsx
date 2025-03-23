@@ -31,7 +31,7 @@ const Achievements = () => {
 				<div className="text-style-pill bg-blue">Marshmallow</div>
 				<div className="text-style-pill bg-blue">Flask-Caching</div>
 				<div className="text-style-pill bg-orange">JWT Authentication</div>
-				<div class="text-style-pill bg-purple">SocketIO</div>
+				<div className="text-style-pill bg-purple">SocketIO</div>
 			</div>
 		</div>
 	);

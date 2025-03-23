@@ -5,8 +5,6 @@ import Image from "react-bootstrap/Image";
 import { Poppins } from "@next/font/google";
 import { useEffect, useState } from "react";
 
-// import Logo from "../../public/assets/img/hero/logo.png";
-
 const poppins = Poppins({
 	weight: "400",
 	style: "normal",
@@ -80,13 +78,13 @@ function NavBar() {
 						>
 							Portfolio
 						</Nav.Link>
-						{/* <Nav.Link
+						<Nav.Link
 							className={poppins.className}
 							href="#blog"
 							style={{ marginLeft: "12px" }}
 						>
 							Blog
-						</Nav.Link> */}
+						</Nav.Link>
 						<Nav.Link
 							className={poppins.className}
 							href="#contact"

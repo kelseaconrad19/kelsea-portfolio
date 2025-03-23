@@ -46,7 +46,10 @@ const HomeDark = () => {
 			<div className="yellow">
 				<NavBar2 />
 				<Tabs>
-					<div className="header"></div>
+					<div className="header" style={{
+						color: "white",
+						fontSize: "1px"
+										}}>.</div>
 					{/* End Menu Content */}
 
 					<div className="content">

@@ -107,8 +107,8 @@ const Portfolio = () => {
 													</div>
 													<div className="project-list">
 														<div className="list-item">
-															<div class="list-icon-wrapper">
-																<div class="icon-embed-xsmall text-color-blue w-embed">
+															<div className="list-icon-wrapper">
+																<div className="icon-embed-xsmall text-color-blue w-embed">
 																	<svg
 																		xmlns="http://www.w3.org/2000/svg"
 																		x="0px"
@@ -129,8 +129,8 @@ const Portfolio = () => {
 															</div>
 														</div>
 														<div className="list-item">
-															<div class="list-icon-wrapper">
-																<div class="icon-embed-xsmall text-color-yellow w-embed">
+															<div className="list-icon-wrapper">
+																<div className="icon-embed-xsmall text-color-yellow w-embed">
 																	<svg
 																		xmlns="http://www.w3.org/2000/svg"
 																		x="0px"

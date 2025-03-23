@@ -1,5 +1,6 @@
 import PokeAPI from "../../../public/assets/img/portfolio/pokeapi.png";
-import GRNLITE from "../../../public/assets/img/portfolio/grnlite-home.png";
+import GRNLITEHOME from "../../../public/assets/img/portfolio/grnlite-home.png";
+import GRNLITEDB from "../../../public/assets/img/portfolio/grnlite-db.png";
 import Image2 from "../../../public/assets/img/portfolio/sidequests.png";
 import Image3 from "../../../public/assets/img/portfolio/ecomm1.png";
 
@@ -7,7 +8,7 @@ const PortfolioData = [
 	{
 	id: 1,
 		type: "GRNLITE Capstone Project",
-		image: GRNLITE,
+		image: GRNLITEHOME,
 		tag: ["fullstack"],
 		description:
 			"A web application that connects authors with beta readers to facilitate collaboration on writing projects. Authors can create projects, upload manuscripts, and request feedback from beta readers, who can provide comments and suggestions about the text.",
@@ -23,7 +24,7 @@ const PortfolioData = [
 				client: "Coding Temple",
 				language: "HTML, CSS, Javascript",
 				preview: "GRNLITE Capstone Project",
-				link: "https://kelseaconrad19.github.io/PokeAPISite/",
+				link: "",
 				description:
 					"A web application that connects authors with beta readers to facilitate collaboration on writing projects. Authors can create projects, upload manuscripts, and request feedback from beta readers, who can provide comments and suggestions about the text.",
 				techUsed:
