@@ -123,6 +123,21 @@ const HomeDark = () => {
 									{/* <div className="color-block2"></div> */}
 								</div>
 							</section>
+							<section id="blog" className="blog" style={{ backgroundColor: "#FCFCFC" }}>
+							<h2
+										className={`about-heading ${comforter.className}`}
+										style={{
+											fontSize: "5rem",
+											marginBottom: "2rem",
+											paddingTop: "1rem",
+											color: "#353531",
+											textAlign: "center",
+										}}
+									>
+										Blog Posts
+									</h2>
+								<Blog />
+							</section>
 
 							<section id="contact">
 								<div className="gradient-line"></div>

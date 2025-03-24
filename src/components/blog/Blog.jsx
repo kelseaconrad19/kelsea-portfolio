@@ -16,7 +16,7 @@ const Blog = () => {
   },[])
   return (
     <>
-      <div className="row" id="modal">
+      <div className="row" id="modal" style={{width: '90%', margin: '0 auto'}}>
         {blogsData.map((item) => (
           <div
             key={item.id}
@@ -28,7 +28,7 @@ const Blog = () => {
             >
               <div className="post-thumb">
                 <div className="d-block position-relative overflow-hidden">
-                  <Image src={item?.img} className="img-fluid" alt="item.title" />
+                  <Image src={item?.img} className="img-fluid" alt="item.title"/>
                 </div>
               </div>
               {/* End .thumb */}
@@ -37,7 +37,7 @@ const Blog = () => {
                   <h3>{item?.title}</h3>
                 </div>
                 <div className="entry-content open-sans-font">
-                  <p>{item?.description1.slice(0, 100)}</p>
+                  <p>{item?.paragraphs[0].slice(0, 135)}</p>
                 </div>
               </div>
               {/* End .post-content */}
@@ -65,7 +65,7 @@ const Blog = () => {
                   {/* Article Starts */}
                   <article>
                     <div className="title-section text-start text-sm-center">
-                      <h1>
+                      <h1 id='post-title' style={{ color: '#f5f8fc'}}>
                         Post <span>Details</span>
                       </h1>
                       <span className="title-bg">posts</span>
@@ -93,15 +93,11 @@ const Blog = () => {
                       alt="Blog"
                     />
                     <div className="blog-excerpt open-sans-font pb-5">
-                      <p>{singleData?.description1}</p>
-                      <div className="quotebox">
-                        <div className="icon">
-                          <Image src={blogQuote} alt="blog quote" />
-                        </div>
-                        <p>{singleData?.description2}</p>
-                      </div>
-                      <p>{singleData?.description3}</p>
-                      <p>{singleData?.description4}</p>
+                    {singleData?.paragraphs?.map((paragraph, i) => (
+                      <p key={i} style={{ color: "#f5f8fc" }}>
+                        {paragraph}
+                      </p>
+                    ))}
                     </div>
                     {/* Article Content Ends */}
                   </article>

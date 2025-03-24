@@ -1376,6 +1376,7 @@ body.light .contact .custom-span-contact a {
 .blog-post article h1 {
 	font-weight: 600;
 	margin: 15px 0 25px;
+	color: white !important;
 }
 
 .blog-post article img {
@@ -1397,6 +1398,10 @@ body.light .contact .custom-span-contact a {
 			min-height: 173px;
 		}
 	}
+}
+
+.img-fluid {
+	height: 279px !important;
 }
 
 .blog-post .meta span {

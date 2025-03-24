@@ -60,6 +60,14 @@ const NavBar2 = () => {
 				<li>
 					<button
 						className="navbar-link"
+						onClick={() => scrollToSection("blog")}
+					>
+						Blog
+					</button>
+				</li>
+				<li>
+					<button
+						className="navbar-link"
 						onClick={() => scrollToSection("contact")}
 					>
 						Contact
